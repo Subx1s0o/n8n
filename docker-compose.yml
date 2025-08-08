@@ -12,6 +12,13 @@ services:
       - N8N_PORT=5678
       - GENERIC_TIMEZONE=Europe/Kyiv
       - N8N_RUNNERS_ENABLED=true
+      - N8N_GIT_SYNC_ACTIVE=true
+      - N8N_GIT_SYNC_REPOSITORY=https://github.com/Subx1s0o/n8n.git
+      - N8N_GIT_SYNC_BRANCH=main
+      - N8N_GIT_SYNC_USERNAME=Subx1s0o
+      - N8N_GIT_SYNC_PASSWORD=${N8N_GIT_SYNC_PASSWORD}
+      - N8N_GIT_SYNC_SYNC_INTERVAL=60
+      - N8N_GIT_SYNC_AUTOCOMMIT=true
     volumes:
       - n8n_data:/home/node/.n8n
 
