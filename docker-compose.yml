@@ -19,6 +19,7 @@ services:
       - N8N_GIT_SYNC_PASSWORD=${N8N_GIT_SYNC_PASSWORD}
       - N8N_GIT_SYNC_SYNC_INTERVAL=60
       - N8N_GIT_SYNC_AUTOCOMMIT=true
+      - N8N_GIT_SYNC_PUSH_ON_CHANGES=true
     volumes:
       - n8n_data:/home/node/.n8n
 
